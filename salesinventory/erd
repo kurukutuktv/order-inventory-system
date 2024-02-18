@@ -1,0 +1,28 @@
+database : stocks
+table : stocks
+	stock_id
+	name
+	type_id
+	qty
+	price
+	date_added
+
+table : products
+	product_id
+	name
+	qty
+	price
+
+table : sales
+	sales_id
+	product_id
+	date_sold
+
+insert into types (type_id, type_name) values (1, 'Consumables');
+insert into types (type_id, type_name) values (2, 'Supplies');
+insert into stocks (stock_id, stock_name, stock_price, qty, type_id)
+VALUES (1, 'measuring cup 10mm', 25.0, 5, 2);
+insert into stocks (stock_id, stock_name, stock_price, qty, type_id)
+VALUES (2, 'meat', 25.0, 5, 1);
+insert into stocks (stock_id, stock_name, stock_price, qty, type_id)
+VALUES (3, 'bottle', 25.0, 5, 2);
